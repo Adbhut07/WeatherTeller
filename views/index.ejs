@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Teller</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <div class="card">
+        <form method="post">
+            <div class="search">
+                <input type="text" name="city" placeholder="enter city" spellcheck="false">
+                <button type="submit" formaction="/get-weather"><img src="/images/search.png"></button>
+            </div>
+        </form>
+
+
+        <div class="weather">
+            <img src="/images/<%=image%>.png" class="weather-icon" alt="weather-img">
+            <h1 class="temp"><%=temperature%>°C</h1>
+            <h2 class="city"><%=cityName%></h2>
+            <h3><%=content%></h3>
+            <div class="details">
+                <div class="col">
+                    <img src="/images/humidity.png">
+                    <div>
+                        <p class="humidity"><%=humidity%></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/images/wind.png">
+                    <div>
+                        <p class="wind"><%=speed%>km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            
+            </div>
+    
+        </div>
+    </div>
+
+    <footer>
+        @adbhut
+    </footer>
+    
+    
+</body>
+</html>
